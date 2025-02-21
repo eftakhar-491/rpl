@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Store</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-200">
+    
+    <!-- Navbar -->
+    <header class="bg-red-800 shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+            <a href="#" class="text-white text-2xl font-bold">Plant Store</a>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="text-white hover:underline">Home</a></li>
+                <li><a href="product.html" class="text-white hover:underline">Product</a></li>
+                <li><a href="about.html" class="text-white hover:underline">About Us</a></li>
+                <li><a href="contact.html" class="text-white hover:underline">Contact Us</a></li>
+                <li class="text-white" id="Clock">12:00:00 AM</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover h-[500px] flex items-center justify-center text-center text-white" style="  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0),
+    rgba(33,33,33,100)
+  ),url('./assets/hero-bg.jpg');">
+        <div  class="bg-black bg-opacity-70 p-8 rounded-lg">
+            <h1 class="text-4xl font-bold">Bangladesh Libaration War 1971</h1>
+            <p class="mt-2">A world where plants fight back for survival.</p>
+        </div>
+    </section>
+
+    <!-- Plant Matchmaker Section -->
+    <section class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-red-500">Plant Warriors</h2>
+            <p class="text-gray-400 mt-2">Choose your strongest plant allies.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                <div class="bg-gray-800 shadow-md rounded-lg p-6">
+                    <img src="./assets/hero-bg.jpg" class="rounded-md" alt="Sunlight">
+                    <h3 class="text-lg font-semibold mt-4 text-red-400">Sunlight Needs</h3>
+                    <p class="text-gray-400">Find battle-hardened plants that thrive in harsh light.</p>
+                </div>
+                <div class="bg-gray-800 shadow-md rounded-lg p-6">
+                    <img src="./assets/hero-bg.jpg" class="rounded-md" alt="Care Level">
+                    <h3 class="text-lg font-semibold mt-4 text-red-400">Survival Level</h3>
+                    <p class="text-gray-400">Only the strongest endure the toughest conditions.</p>
+                </div>
+                <div class="bg-gray-800 shadow-md rounded-lg p-6">
+                    <img src="./assets/hero-bg.jpg" class="rounded-md" alt="Pet-Friendly">
+                    <h3 class="text-lg font-semibold mt-4 text-red-400">Pet-Friendliness</h3>
+                    <p class="text-gray-400">Warriors that coexist with your animal companions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Gallery Section -->
+<section class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-red-500">Gallery</h2>
+            <p class="text-gray-400 mt-2">A glimpse into our plant warriors.</p>
+            <div class="max-w-[900px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                <div class="bg-gray-800 shadow-md rounded-lg overflow-hidden md:col-span-2 h-[250px]">
+                    <img src="./assets/hero-bg.jpg" class="w-full h-full ovject-cover" alt="Gallery Image 1">
+                </div>
+                <div class="bg-gray-800 shadow-md rounded-lg overflow-hidden h-[250px]">
+                    <img src="./assets/hero-bg.jpg" class="w-full h-full ovject-cover" alt="Gallery Image 2">
+                </div>
+                <div class="bg-gray-800 shadow-md rounded-lg overflow-hidden md:col-span-3 h-[250px]">
+                    <img src="./assets/hero-bg.jpg" class="w-full h-full ovject-cover" alt="Gallery Image 3">
+                </div>
+                <div class="bg-gray-800 shadow-md rounded-lg overflow-hidden h-[250px]">
+                    <img src="./assets/hero-bg.jpg" class="w-full h-full ovject-cover" alt="Gallery Image 4 ">
+                </div>
+                <div class="bg-gray-800 shadow-md rounded-lg overflow-hidden md:col-span-2 h-[250px]">
+                    <img src="./assets/hero-bg.jpg" class="w-full h-full ovject-cover" alt="Gallery Image 5">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-red-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Plant Resistance. The revolution continues.</p>
+        </div>
+    </footer>
+
+    <!-- Clock Script -->
+    <script>
+        const showTime = () => {
+            let date = new Date();
+            let h = date.getHours();
+            let m = date.getMinutes();
+            let s = date.getSeconds();
+            let session = "AM";
+
+            if (h > 11) { session = "PM"; }
+            if (h > 12) { h = h - 12; }
+            if (h === 0) { h = 12; }
+
+            h = h < 10 ? "0" + h : h;
+            m = m < 10 ? "0" + m : m;
+            s = s < 10 ? "0" + s : s;
+
+            document.getElementById("Clock").innerText = `${h}:${m}:${s} ${session}`;
+        }
+        setInterval(showTime, 1000);
+    </script>
+
+</body>
+</html>

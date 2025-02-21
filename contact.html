@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-200">
+    
+    <!-- Navbar -->
+    <header class="bg-red-800 shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+            <a href="#" class="text-white text-2xl font-bold">Plant Resistance</a>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="text-white hover:underline">Home</a></li>
+                <li><a href="product.html" class="text-white hover:underline">Product</a></li>
+                <li><a href="about.html" class="text-white hover:underline">About Us</a></li>
+                <li><a href="contact.html" class="text-white hover:underline">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-[400px] flex items-center justify-center text-center text-white" style="background-image: url('./assets/hero-bg.jpg');">
+        <div class="bg-black bg-opacity-70 p-8 rounded-lg">
+            <h1 class="text-4xl font-bold">Contact the Resistance</h1>
+            <p class="mt-2">Reach out to join the movement.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-red-500">Get in Touch</h2>
+            <p class="text-gray-400 mt-2">Your voice strengthens our cause.</p>
+            <div class="max-w-lg mx-auto mt-8 bg-gray-800 p-6 rounded-lg shadow-lg">
+                <form>
+                    <div class="mb-4">
+                        <label class="block text-gray-300 text-left">Name</label>
+                        <input type="text" class="w-full p-2 mt-1 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-red-500">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-300 text-left">Email</label>
+                        <input type="email" class="w-full p-2 mt-1 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-red-500">
+                    </div>
+                    <div class="mb-4">
+                        <label class="block text-gray-300 text-left">Message</label>
+                        <textarea class="w-full p-2 mt-1 bg-gray-700 border border-gray-600 rounded focus:outline-none focus:ring-2 focus:ring-red-500" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-red-600 text-white py-2 rounded hover:bg-red-700">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-red-500">Our Location</h2>
+            <p class="text-gray-400 mt-2">Find us on the map and visit our base.</p>
+            <div class="mt-8 w-full h-96">
+                <iframe 
+                    class="w-full h-full rounded-lg shadow-lg"
+                    src="https://www.google.com/maps/embed?v=3&hl=en&q=Your+Location+Here" 
+                    frameborder="0" 
+                    allowfullscreen="" 
+                    aria-hidden="false" 
+                    tabindex="0">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-red-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Plant Resistance. Stay strong.</p>
+        </div>
+    </footer>
+</body>
+</html>

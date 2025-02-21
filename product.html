@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-gray-200">
+    
+    <!-- Navbar -->
+    <header class="bg-red-800 shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+            <a href="#" class="text-white text-2xl font-bold">Plant Resistance</a>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="text-white hover:underline">Home</a></li>
+                <li><a href="product.html" class="text-white hover:underline">Product</a></li>
+                <li><a href="about.html" class="text-white hover:underline">About Us</a></li>
+                <li><a href="contact.html" class="text-white hover:underline">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-[400px] flex items-center justify-center text-center text-white" style="background-image: url('./assets/hero-bg.jpg');">
+        <div class="bg-black bg-opacity-70 p-8 rounded-lg">
+            <h1 class="text-4xl font-bold">Choose Your Warriors</h1>
+            <p class="mt-2">Survival depends on selecting the right allies.</p>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-red-500">Featured Plants</h2>
+            <p class="text-gray-400 mt-2">Equip your arsenal with nature’s finest defenders.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                <div class="bg-gray-800 shadow-md rounded-lg p-6">
+                    <img src="./assets/hero-bg.jpg" class="rounded-md" alt="Aloe Vera">
+                    <h3 class="text-lg font-semibold mt-4 text-red-400">Aloe Vera</h3>
+                    <p class="text-gray-400">A resilient healer, essential for survival.</p>
+                    <button class="mt-4 bg-red-600 text-white px-4 py-2 rounded">Buy Now</button>
+                </div>
+                <div class="bg-gray-800 shadow-md rounded-lg p-6">
+                    <img src="./assets/hero-bg.jpg" class="rounded-md" alt="Snake Plant">
+                    <h3 class="text-lg font-semibold mt-4 text-red-400">Snake Plant</h3>
+                    <p class="text-gray-400">A warrior in air purification and endurance.</p>
+                    <button class="mt-4 bg-red-600 text-white px-4 py-2 rounded">Buy Now</button>
+                </div>
+                <div class="bg-gray-800 shadow-md rounded-lg p-6">
+                    <img src="./assets/hero-bg.jpg" class="rounded-md" alt="Peace Lily">
+                    <h3 class="text-lg font-semibold mt-4 text-red-400">Peace Lily</h3>
+                    <p class="text-gray-400">An elegant fighter against toxins.</p>
+                    <button class="mt-4 bg-red-600 text-white px-4 py-2 rounded">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-red-900 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Plant Resistance. Strength in Nature.</p>
+        </div>
+    </footer>
+</body>
+</html>
